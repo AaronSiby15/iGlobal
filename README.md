@@ -6,7 +6,7 @@
 
 ---
 
-## 📽️ Demonstration Video  
+## 📽️ Demonstration Video  (Click on the Image!)
 
 <p align="center">
   <a href="https://vimeo.com/1116282803" target="_blank">
