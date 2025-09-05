@@ -10,10 +10,9 @@
 
 <p align="center">
   <a href="https://vimeo.com/1116282803" target="_blank">
-    <img src="./Assignment4/demo-thumbnail.png" alt="iGlobal Demo Video" width="600"/>
+    <img src="./Assignment4/Screenshot%202025-09-05%20165319.png" alt="iGlobal Demo Video" width="600"/>
   </a>
 </p>
-
 <p align="center"><i>Click the image above to watch the demo video on Vimeo</i></p>
 
 ---
