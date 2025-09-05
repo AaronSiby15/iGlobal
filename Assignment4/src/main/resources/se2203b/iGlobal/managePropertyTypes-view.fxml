@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="353.0" prefWidth="660.0" style="-fx-background-color: #dbdbdb;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.iGlobal.ManagePropertyTypesController">
+
+<children>
+    <TableView fx:id="propertyTypeTableView" editable="true" layoutX="21.0" layoutY="69.0" prefHeight="190.0" prefWidth="619.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.0">
+        <columns>
+            <TableColumn fx:id="typeCodeCol" onEditCommit="#onTypeCodeEdit" prefWidth="140.0" text="Property Type Code" />
+            <TableColumn fx:id="typeNameCol" onEditCommit="#onTypeNameEdit" prefWidth="478.0" text="Property Type Name" />
+        </columns>
+    </TableView>
+
+    <TextField fx:id="typeCode" layoutX="20.8" layoutY="259.0" prefHeight="26.0" prefWidth="140.0" AnchorPane.leftAnchor="21.0" />
+    <TextField fx:id="typeName" layoutX="161.60000000000002" layoutY="259.0" prefHeight="26.0" prefWidth="482.0" AnchorPane.rightAnchor="18.0" />
+
+    <Button fx:id="addTypeBtn" layoutX="577.4" layoutY="312.0" mnemonicParsing="false" onAction="#addTypeBtnClicked" prefHeight="26.0" prefWidth="59.0" text="Add" AnchorPane.rightAnchor="14.399999999999977" />
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Manage Property Types" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeTypeBtn" layoutX="512.0" layoutY="313.0" mnemonicParsing="false" onAction="#deletePropertyType" text="Remove" textFill="#f70202" />
+      <Button fx:id="exitBtn" layoutX="21.0" layoutY="313.0" mnemonicParsing="false" onAction="#closeForm" text="Exit" />
+
+</children>
+</AnchorPane>

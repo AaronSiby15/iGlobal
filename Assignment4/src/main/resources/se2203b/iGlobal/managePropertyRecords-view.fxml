@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="953.0" style="-fx-background-color: #E0E0E0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.iGlobal.ManagePropertyRecordsController">
+
+    <children>
+        <VBox prefHeight="390.0" prefWidth="780.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+
+                <!-- Header -->
+                <HBox alignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Manage Property Records" />
+                    </children>
+                </HBox>
+
+                <!-- Table and Add Button -->
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <children>
+                        <Button fx:id="addPropertyButton" onAction="#handleAddNewProperty" text="Add New Property" />
+                    </children>
+                </HBox>
+
+                <!-- TableView -->
+                <!-- TableView inside ScrollPane for horizontal scrolling -->
+                <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="AS_NEEDED">
+                    <content>
+                        <TableView fx:id="propertyTable" prefHeight="232.0" prefWidth="1000.0">
+                            <columns>
+                                <TableColumn fx:id="colPropertyType" prefWidth="120" text="Property Type" />
+                                <TableColumn fx:id="colLotSize" prefWidth="100" text="Lot Size" />
+                                <TableColumn fx:id="colSquareFootage" prefWidth="120" text="S. Footage" />
+                                <TableColumn fx:id="colBedrooms" prefWidth="100" text="Bedrooms" />
+                                <TableColumn fx:id="colBathrooms" prefWidth="100" text="Bathrooms" />
+                                <TableColumn fx:id="colYear" prefWidth="80" text="Year" />
+                                <TableColumn fx:id="colPrice" prefWidth="120" text="Price" />
+                                <TableColumn fx:id="colProvince" prefWidth="100" text="Province" />
+                                <TableColumn fx:id="colCity" prefWidth="100" text="City" />
+                                <TableColumn fx:id="colAddress" prefWidth="150" text="Address" />
+                                <TableColumn fx:id="colPostalCode" prefWidth="120" text="Postal Code" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </ScrollPane>
+
+
+                <!-- Footer Buttons -->
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <children>
+                        <Button fx:id="removeButton" onAction="#handleRemoveProperty" style="-fx-text-fill: red;" text="Remove">
+                     <HBox.margin>
+                        <Insets right="750.0" />
+                     </HBox.margin></Button>
+                        <Button fx:id="exitButton" onAction="#handleExit" text="Exit">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin></Button>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

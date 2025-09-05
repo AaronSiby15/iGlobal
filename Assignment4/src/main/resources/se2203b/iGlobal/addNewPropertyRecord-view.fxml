@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="se2203b.iGlobal.AddNewPropertyRecordController"
+            prefHeight="450.0" prefWidth="400.0">
+
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="15.0" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <children>
+
+                <Label text="Add New Property Record" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+                <GridPane hgap="10" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    <children>
+                        <Label text="Property Type:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="propertyTypeCombo" prefWidth="200" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Street Number and Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="streetField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Postal Code:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="postalCodeField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Province:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="provinceCombo" prefWidth="200" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="City:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="cityCombo" prefWidth="200" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Lot Size:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <TextField fx:id="lotSizeField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                        <Label text="Square Footage:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+                        <TextField fx:id="squareFootageField" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+                        <Label text="Number of Bedrooms:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                        <TextField fx:id="bedroomsField" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+                        <Label text="Number of Bathrooms:" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+                        <TextField fx:id="bathroomsField" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+
+                        <Label text="Year Built:" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+                        <TextField fx:id="yearBuiltField" GridPane.rowIndex="9" GridPane.columnIndex="1"/>
+
+                        <Label text="Amenities:" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+                        <TextField fx:id="amenitiesField" GridPane.rowIndex="10" GridPane.columnIndex="1"/>
+
+                        <Label text="Price:" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+                        <TextField fx:id="priceField" GridPane.rowIndex="11" GridPane.columnIndex="1"/>
+
+                        <Label text="General Description:" GridPane.rowIndex="12" GridPane.columnIndex="0"/>
+                        <TextField fx:id="descriptionField" GridPane.rowIndex="12" GridPane.columnIndex="1"/>
+                    </children>
+                </GridPane>
+
+                <HBox spacing="15" alignment="CENTER">
+                    <Button fx:id="cancelButton" text="Cancel" onAction="#handleCancel"/>
+                    <Button fx:id="saveButton" text="Save" onAction="#handleSave"/>
+                </HBox>
+
+            </children>
+            <padding>
+                <Insets top="20" left="20" right="20" bottom="20"/>
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
+

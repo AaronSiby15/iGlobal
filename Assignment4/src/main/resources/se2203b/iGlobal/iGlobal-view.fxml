@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1030.0" style="-fx-background-image: url(&quot;file:src/main/resources/se2203b/iGlobal/WesternBackground.png&quot;);                         -fx-background-repeat: no-repeat;                                  -fx-background-size: 100% 100%;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.iGlobal.IGlobalController">
+    <top>
+        <MenuBar fx:id="mainMenu" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="loginMenuItem" mnemonicParsing="false" onAction="#login" text="Login" />
+                        <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#exit" text="Close" />
+                    </items>
+                </Menu>
+
+                <Menu fx:id="agentPortalMenu" mnemonicParsing="false" text="Agent Portal">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Track Property Listing" />
+                        <MenuItem mnemonicParsing="false" text="Manage Client Profiles" />
+                        <MenuItem mnemonicParsing="false" text="Manage Client Preferences " />
+                        <MenuItem mnemonicParsing="false"   text="Manage Transaction/Commissions " />
+                        <MenuItem mnemonicParsing="false"  text="Manage Property Records" onAction="#openManagePropertyRecords" />
+                        <MenuItem mnemonicParsing="false" text="Upload Property Files" />
+                    </items></Menu>
+                <Menu fx:id="executivePortalMenu" mnemonicParsing="false" text="Executive Portal">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Generate Performance Reports" />
+                    </items></Menu>
+                <Menu fx:id="adminPortalMenu" mnemonicParsing="false" text="Administrator Portal">
+                    <items>
+                  <Menu mnemonicParsing="false" text="Manage iGlobal User Profiles">
+                    <items>
+                        <MenuItem mnemonicParsing="false"  text="Agents" onAction="#openManageAgents" />
+                        <MenuItem mnemonicParsing="false"  text="Executives" onAction="#openManageExecutives" />
+                        <MenuItem mnemonicParsing="false"  text="Administrators" onAction = "#openManageAdministrators" />
+                    </items>
+                  </Menu>
+                        <MenuItem mnemonicParsing="false" text="Manage Property Listings" />
+                        <MenuItem mnemonicParsing="false" text="Manage User Accounts" onAction = "#openManageUserAccounts" />
+                  <Menu fx:id="configSystemCodes" mnemonicParsing="false" text="Configure System Codes">
+                    <items>
+                      <MenuItem fx:id="propertyTypes" mnemonicParsing="false" onAction="#managePropertyTypes" text="Property Types" />
+                              <MenuItem fx:id="statusCodes" mnemonicParsing="false" text="Status Codes" />
+                        <MenuItem fx:id="documentTypes" mnemonicParsing="false" text="Document Types" />
+                    </items>
+                  </Menu>
+                    </items>
+                </Menu>
+                <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem fx:id="aboutusMenuItem" mnemonicParsing="false" onAction="#showAbout" text="About Us" />
+                    </items>
+                </Menu>
+                <Menu fx:id="userMenuItem" mnemonicParsing="false" text=" " visible="false">
+                    <items>
+                        <MenuItem fx:id="changePasswordMenuItem" mnemonicParsing="false" onAction="#changePassword" text="Change Password" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="logoutMenuItem" disable="true" mnemonicParsing="false" onAction="#logout" text="Logout" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

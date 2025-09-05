@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="366.0" prefWidth="690.0" style="-fx-background-color: #E0E0E0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.iGlobal.ManageAgentProfilesController">
+
+    <VBox alignment="TOP_RIGHT" layoutX="3.0" layoutY="14.0" prefHeight="348.0" prefWidth="657.0" spacing="10" AnchorPane.rightAnchor="21.0">
+
+
+
+
+        <!-- Title -->
+        <Label maxWidth="Infinity" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-alignment: center;" text="Manage Agent Profiles" />
+         <Button fx:id="btnAddAgent" onAction="#addAgent" prefHeight="26.0" prefWidth="104.0" text="Add New Agent" />
+
+        <!-- TableView for Agent Data -->
+        <TableView fx:id="agentsTable" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="colFirstName" text="First Name" />
+                <TableColumn fx:id="colLastName" text="Last Name" />
+                <TableColumn fx:id="colEmail" prefWidth="98.0" text="Email Address" />
+                <TableColumn fx:id="colPhone" prefWidth="99.39996337890625" text="Phone Number" />
+                <TableColumn fx:id="colLicence" prefWidth="99.800048828125" text="Licence Number" />
+                <TableColumn fx:id="colSpecialization" prefWidth="223.79998779296875" text="Specialization" />
+            </columns>
+        </TableView>
+
+        <!-- Action Buttons -->
+        <HBox alignment="CENTER_RIGHT" spacing="10" />
+
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Button fx:id="btnRemoveAgent" onAction="#removeAgent" style=" -fx-text-fill: red;" text="Remove">
+            <HBox.margin>
+               <Insets left="20.0" />
+            </HBox.margin></Button>
+
+            <Button fx:id="btnExit" alignment="BOTTOM_RIGHT" onAction="#closeWindow" prefHeight="26.0" prefWidth="41.0" text="Exit" textAlignment="CENTER">
+            <HBox.margin>
+               <Insets left="525.0" />
+            </HBox.margin></Button>
+        </HBox>
+
+    </VBox>
+</AnchorPane>

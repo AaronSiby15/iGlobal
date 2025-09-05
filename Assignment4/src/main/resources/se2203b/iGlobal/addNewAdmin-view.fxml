@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="342.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.iGlobal.AddNewAdminController">
+    <VBox alignment="CENTER_LEFT" layoutX="58.0" layoutY="43.0" prefHeight="263.0" prefWidth="339.0" spacing="10" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="43.0">
+        <Label prefHeight="26.0" prefWidth="337.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Add New Administrator">
+         <VBox.margin>
+            <Insets right="70.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="85.0" />
+         </padding></Label>
+
+        <GridPane hgap="10" prefHeight="170.0" prefWidth="321.0" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" minWidth="100" />
+                <ColumnConstraints halignment="LEFT" />
+            </columnConstraints>
+
+
+            <Label text="First Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="txtFirstName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Last Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="txtLastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Email Address" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Phone Number" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="txtPhone" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Date Hired" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <DatePicker fx:id="dateHired" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Button onAction="#handleCancel" text="Cancel">
+            <HBox.margin>
+               <Insets right="59.0" />
+            </HBox.margin></Button>
+            <Button onAction="#handleSave" text="Save">
+            <HBox.margin>
+               <Insets right="50.0" />
+            </HBox.margin></Button>
+        </HBox>
+    </VBox>
+
+</AnchorPane>
