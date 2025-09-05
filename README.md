@@ -9,12 +9,12 @@
 ## 📽️ Demonstration Video  
 
 <p align="center">
-  <a href="./SE2203b%20Assignment4%202025%20(4).mp4">
+  <a href="https://vimeo.com/1116282803" target="_blank">
     <img src="./Assignment4/demo-thumbnail.png" alt="iGlobal Demo Video" width="600"/>
   </a>
 </p>
 
-<p align="center"><i>Click the image above to watch/download the demo video</i></p>
+<p align="center"><i>Click the image above to watch the demo video on Vimeo</i></p>
 
 ---
 
@@ -55,4 +55,5 @@ cd iglobal
 # Open in IntelliJ IDEA (or Eclipse)
 # Configure JavaFX and Derby
 # Run Main.java
+
 
