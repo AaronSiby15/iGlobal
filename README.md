@@ -1,56 +1,58 @@
-iGlobal – Real Estate Management System
+<h1 align="center">🌍 iGlobal – Real Estate Management System</h1>
 
-iGlobal is a JavaFX-based real estate management system backed by an Apache Derby database. It provides separate portals for Administrators, Executives, and Agents, with features for managing users, properties, and account access.
+<p align="center">
+  <b>A JavaFX + Derby application for managing Administrators, Executives, Agents, and Property Records</b>
+</p>
 
-📽️ Demonstration Video
+---
 
-👉 Watch the demo here
+## 📽️ Demonstration Video  
 
-✨ Features
-🔑 User Authentication & Profiles
+<p align="center">
+  <a href="./SE2203b%20Assignment4%202025%20(4).mp4">
+    <img src="./Assignment4/demo-thumbnail.png" alt="iGlobal Demo Video" width="600"/>
+  </a>
+</p>
 
-Secure login system for Administrators, Executives, and Agents
+<p align="center"><i>Click the image above to watch/download the demo video</i></p>
 
-Role-based access to different portals
+---
 
-User account creation, linking, and management
+## ✨ Features  
 
-👨‍💼 Administrator Portal
+- 🔑 **User Authentication & Profiles** – Secure login with role-based access (Admin, Executive, Agent)  
+- 👨‍💼 **Administrator Portal** – Manage admins, oversee user accounts, configure system data  
+- 📊 **Executive Portal** – Manage executive profiles, access role-specific features  
+- 🏠 **Agent Portal** – Manage property records (CRUD), assign types, link provinces & cities  
+- 🗄️ **Database Integration** – Persistent storage with Apache Derby, auto-linking user accounts  
 
-Manage administrator profiles
+---
 
-Oversee all user accounts (Admin, Executive, Agent)
+## 🛠️ Tech Stack  
 
-Configure system data like provinces, cities, and property types
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-11-blue?logo=java" />
+  <img src="https://img.shields.io/badge/JavaFX-UI-green?logo=openjdk" />
+  <img src="https://img.shields.io/badge/Apache-Derby-orange?logo=apache" />
+  <img src="https://img.shields.io/badge/MVC-Architecture-purple" />
+</p>
 
-📊 Executive Portal
+---
 
-Manage executive profiles
+## 🚀 Getting Started  
 
-Access executive-specific dashboard and reporting features
+### Prerequisites  
+- Java 11 (or below)  
+- Apache Derby  
+- JavaFX SDK  
 
-🏠 Agent Portal
+### Run the Project  
+```bash
+# Clone the repository
+git clone https://github.com/AaronSiby15/iglobal.git
+cd iglobal
 
-Manage property records (add, edit, delete)
+# Open in IntelliJ IDEA (or Eclipse)
+# Configure JavaFX and Derby
+# Run Main.java
 
-Assign property types, addresses, prices, and descriptions
-
-Access province and city database integration for property listings
-
-🗄️ Database (Derby)
-
-Persistent storage for user accounts, properties, provinces, cities, and property types
-
-Auto-linking between users and roles (Admin, Executive, Agent)
-
-🛠️ Tech Stack
-
-Java 11
-
-JavaFX (UI framework)
-
-Apache Derby (Embedded database)
-
-FXML (UI layouts)
-
-MVC architecture
